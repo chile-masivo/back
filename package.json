@@ -1,0 +1,24 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "Backend chile masivo",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chile-masivo/back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chile-masivo/back/issues"
+  },
+  "homepage": "https://github.com/chile-masivo/back#readme",
+  "dependencies": {
+    "@feathersjs/express": "^4.3.7",
+    "@feathersjs/feathers": "^4.3.7"
+  }
+}
