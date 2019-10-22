@@ -1,6 +1,7 @@
 const feathers = require('@feathersjs/feathers');
 const express = require('@feathersjs/express');
 
+const db = require('../component/db');
 // Creates an ExpressJS compatible Feathers application
 const app = express(feathers());
 
@@ -11,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 // Host static files from the current folder
 app.use(express.static(__dirname));
 
-
+db.connection();
 
 // Start the server
 app.listen(3030).on('listening', () =>

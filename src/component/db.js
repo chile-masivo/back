@@ -1,19 +1,17 @@
 
 
 const schemas = require('../component/schemas');
-
+const mongoose = require('mongoose');
 
 function connection() {
   let mongoDB = 'mongodb://localhost/chilemasivo';   
   mongoose.set('debug', true);
-  mongoose.connect(mongoDB, { useNewUrlParser: true })
+  mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
       schemas.register();
       console.log('Mongoose successfuly connected to [%s]');
-      debug('Mongoose successfuly connected to [%s]');
     })
     .catch((error) => {
-      debug(error);
       console.log('Couldn\'t connect to database [%s]!');
     });
 }
