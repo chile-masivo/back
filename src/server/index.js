@@ -1,5 +1,6 @@
 const feathers = require('@feathersjs/feathers');
 const express = require('@feathersjs/express');
+
 // Creates an ExpressJS compatible Feathers application
 const app = express(feathers());
 

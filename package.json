@@ -19,6 +19,7 @@
   "homepage": "https://github.com/chile-masivo/back#readme",
   "dependencies": {
     "@feathersjs/express": "^4.3.7",
-    "@feathersjs/feathers": "^4.3.7"
+    "@feathersjs/feathers": "^4.3.7",
+    "mongoose": "^5.7.6"
   }
 }
